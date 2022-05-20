@@ -1,3 +1,18 @@
+$lightMainColor: #6836F0;
+$DarkMainColor: #93E855;
+$colorPrimary: #ebeaed;
+$colorSecondary: #1d1d1d;
+html[data-theme="light"] {
+    --color-main: #{$lightMainColor};
+    --color-background: #{$colorPrimary};
+    --color-text: #{$colorSecondary};
+}
+html[data-theme="dark"] {
+    --color-main: #{$DarkMainColor};
+    --color-background: #{$colorSecondary};
+    --color-text: #{$colorPrimary};
+}
+
 @mixin fontsize-100 {
     font-size: 10rem;
     line-height: 12rem;
@@ -30,15 +45,13 @@
         87.5% { transform: translateY(-7 * $lineheight) }
     }
 }
-
-
 .btn-theme {
     display: inline-block;
     position: relative;
     label {
         display: block;
         height: 4rem; width: 4rem;
-        background: url(./image/btn-theme.svg) no-repeat center;
+        background: url(/image/btn-theme.svg) no-repeat center;
         background-size: contain;
         transition: all .4s;
         &.hover {
@@ -48,6 +61,7 @@
     input {
         opacity: 0;
         width: 4rem; height: 4rem;
+        cursor: pointer;
     }
     span {
         position: absolute;
@@ -140,33 +154,6 @@ nav {
             + p {
                 margin-top: 5rem;
             }
-            span {
-                position: relative;
-                border-bottom: 1px solid $colorSecondary;
-                transition: color .7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-                cursor: pointer;
-                white-space: nowrap;
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top:0; left: 0;
-                    width: 100%; height: 100%;
-                    z-index: -1;
-                    transform: scaleX(0);
-                    transform-origin: bottom right;
-                    transition: transform .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-                }
-                &:hover {
-                    color: $colorPrimary;
-                    border-color: $lightMainColor;
-                    &::before {
-                        background-color: rgba(104,54,240,0.7);
-                        transform: scaleX(1);
-                        transform-origin: bottom left;
-                    }
-                }
-            }
         }
     }
     .develop_tools{
@@ -203,7 +190,7 @@ nav {
         height: 2rem;
         text-align: center;
         color: transparent;
-        background: url(./image/appIcon-more.svg) no-repeat center;
+        background: url(/image/appIcon-more.svg) no-repeat center;
         background-size: contain;
         z-index: 10;
         &.prev {
@@ -229,6 +216,34 @@ nav {
         }
     }
 }
+#resize {
+    position: relative;
+    border-bottom: 1px solid $colorSecondary;
+    transition: color .7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    white-space: nowrap;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top:0; left: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    &:hover {
+        color: $colorPrimary;
+        border-color: $lightMainColor;
+        &::before {
+            background-color: rgba(104,54,240,0.7);
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
 #experience {
     padding: 3.2%;
     .seperator {
@@ -297,7 +312,7 @@ nav {
         position: absolute;
         height: 2.4rem; width: 3.5rem;
         top: 1.2rem; right: 1.4rem;
-        background: url(./image/arrow-up-right.svg) no-repeat center;
+        background: url(/image/arrow-up-right.svg) no-repeat center;
         background-size: contain;
     }
     &:hover {
@@ -400,7 +415,7 @@ footer {
             position: absolute;
             top: 1rem; right: 0;
             width: 5.5rem; height: 3.2rem;
-            background: url(./image/arrow-right-light.svg) no-repeat center;
+            background: url(/image/arrow-right-light.svg) no-repeat center;
             background-size: contain;
         }
     }
@@ -525,7 +540,7 @@ footer {
         
     }
     .btn-theme {
-        button {
+        label {
             height: 3rem; width: 3rem;
             }
         span {
@@ -564,6 +579,7 @@ footer {
             height: auto;
             .tools_list {
                 display: flex;
+                flex-direction: row;
                 position: relative;
                 margin: 2rem 0;
                 padding: 0 0.8rem;
@@ -591,13 +607,10 @@ footer {
                 }           
             &.next {
                 &::before {
-                    width: 8rem; height: 4rem;
-                    top: -36rem; left: -2.1rem;
-                }
-                
+                    visibility: hidden;
+                }               
                 &::after {
-                    bottom: 1.3rem; left: -2.1rem; 
-                    width: 8rem; height: 4rem;
+                    visibility: hidden;
                 }
             }
         } 
@@ -606,6 +619,7 @@ footer {
     #experience {
         padding: 3.2% 5.2%;
         .seperator {
+            margin-bottom: 10rem;
             h2, p {
                 @include fontsize-24();
             }
@@ -628,7 +642,7 @@ footer {
             top: 0; bottom: 28rem; 
             picture {
                 img {
-                    width: 60vw;
+                    width: 46vw;
                     top: 15%; left: 50%;
                 }
                 &:first-of-type img {
@@ -683,7 +697,9 @@ footer {
         }
     }
     
-
+    footer {
+        padding: 6rem 3.2%;
+    }
     .contact {
         #contactEmail {
             @include fontsize-24();
@@ -694,6 +710,7 @@ footer {
             padding-right: 6rem;
             @include fontsize-24();
             &::before {
+                top: 0.2rem;
                 width: 4.5rem; height: 2.6rem;
             }
         }
