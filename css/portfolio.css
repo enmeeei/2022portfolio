@@ -1,4 +1,14 @@
-@charset "utf-8";
+html[data-theme="light"] {
+  --color-main: #6836F0;
+  --color-background: #ebeaed;
+  --color-text: #1d1d1d;
+}
+
+html[data-theme="dark"] {
+  --color-main: #93E855;
+  --color-background: #1d1d1d;
+  --color-text: #ebeaed;
+}
 
 .btn-theme {
   display: inline-block;
@@ -9,7 +19,7 @@
   display: block;
   height: 4rem;
   width: 4rem;
-  background: url(./image/btn-theme.svg) no-repeat center;
+  background: url(/image/btn-theme.svg) no-repeat center;
   background-size: contain;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -24,6 +34,7 @@
   opacity: 0;
   width: 4rem;
   height: 4rem;
+  cursor: pointer;
 }
 
 .btn-theme span {
@@ -223,47 +234,6 @@ nav ul li a[aria-current="page"] {
   margin-top: 5rem;
 }
 
-#about .text p span {
-  position: relative;
-  border-bottom: 1px solid #1d1d1d;
-  -webkit-transition: color 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: color 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-#about .text p span::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-#about .text p span:hover {
-  color: #ebeaed;
-  border-color: #6836F0;
-}
-
-#about .text p span:hover::before {
-  background-color: rgba(104, 54, 240, 0.7);
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
 #about .develop_tools {
   position: relative;
   height: 78rem;
@@ -310,7 +280,7 @@ nav ul li a[aria-current="page"] {
   height: 2rem;
   text-align: center;
   color: transparent;
-  background: url(./image/appIcon-more.svg) no-repeat center;
+  background: url(/image/appIcon-more.svg) no-repeat center;
   background-size: contain;
   z-index: 10;
 }
@@ -342,6 +312,47 @@ nav ul li a[aria-current="page"] {
   left: 0;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ebeaed), to(transparent));
   background: linear-gradient(to top, #ebeaed 50%, transparent);
+}
+
+#resize {
+  position: relative;
+  border-bottom: 1px solid #1d1d1d;
+  -webkit-transition: color 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: color 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#resize::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95), -webkit-transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#resize:hover {
+  color: #ebeaed;
+  border-color: #6836F0;
+}
+
+#resize:hover::before {
+  background-color: rgba(104, 54, 240, 0.7);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 #experience {
@@ -435,7 +446,7 @@ nav ul li a[aria-current="page"] {
   width: 3.5rem;
   top: 1.2rem;
   right: 1.4rem;
-  background: url(./image/arrow-up-right.svg) no-repeat center;
+  background: url(/image/arrow-up-right.svg) no-repeat center;
   background-size: contain;
 }
 
@@ -593,7 +604,7 @@ footer {
   right: 0;
   width: 5.5rem;
   height: 3.2rem;
-  background: url(./image/arrow-right-light.svg) no-repeat center;
+  background: url(/image/arrow-right-light.svg) no-repeat center;
   background-size: contain;
 }
 
@@ -709,7 +720,7 @@ footer {
   header nav li a {
     font-size: 1.8rem;
   }
-  .btn-theme button {
+  .btn-theme label {
     height: 3rem;
     width: 3rem;
   }
@@ -831,6 +842,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: relative;
     margin: 2rem 0;
     padding: 0 0.8rem;
@@ -858,19 +873,16 @@ footer {
             transform: rotate(90deg);
   }
   #about .more-tools.next::before {
-    width: 8rem;
-    height: 4rem;
-    top: -36rem;
-    left: -2.1rem;
+    visibility: hidden;
   }
   #about .more-tools.next::after {
-    bottom: 1.3rem;
-    left: -2.1rem;
-    width: 8rem;
-    height: 4rem;
+    visibility: hidden;
   }
   #experience {
     padding: 3.2% 5.2%;
+  }
+  #experience .seperator {
+    margin-bottom: 10rem;
   }
   #experience .seperator h2, #experience .seperator p {
     font-size: 2.4rem;
@@ -897,7 +909,7 @@ footer {
     bottom: 28rem;
   }
   #experience .preview picture img {
-    width: 60vw;
+    width: 46vw;
     top: 15%;
     left: 50%;
   }
@@ -953,6 +965,9 @@ footer {
   #other .btn-page_view::after {
     top: 1rem;
   }
+  footer {
+    padding: 6rem 3.2%;
+  }
   .contact #contactEmail {
     font-size: 2.4rem;
     line-height: 3.6rem;
@@ -963,8 +978,9 @@ footer {
     line-height: 3.6rem;
   }
   #resume a::before {
+    top: 0.2rem;
     width: 4.5rem;
     height: 2.6rem;
   }
 }
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=portfolio.css.map */

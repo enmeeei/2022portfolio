@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
-  <g id="그룹_7" data-name="그룹 7" transform="translate(-36.9 -35.9)">
-    <g id="타원_1" data-name="타원 1" transform="translate(36.9 35.9)" fill="none" stroke="#1d1d1d" stroke-width="1">
-      <circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
-      <circle cx="15.5" cy="15.5" r="15" fill="none"/>
-    </g>
-    <path id="패스_3" data-name="패스 3" d="M15.45,0c-.163.357.036,30.981,0,30.9a15.45,15.45,0,0,1,0-30.9Z" transform="translate(37 36)" fill="#1d1d1d"/>
-  </g>
-</svg>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_101_88)">
+                    <path d="M19.9999 39.35C30.6866 39.35 39.3499 30.6867 39.3499 20C39.3499 9.31331 30.6866 0.650024 19.9999 0.650024C9.31319 0.650024 0.649902 9.31331 0.649902 20C0.649902 30.6867 9.31319 39.35 19.9999 39.35Z" fill="var(--color-background)" stroke="var(--color-text)"/>
+                    <path d="M20.0599 0.130005C19.8499 0.590005 20.1099 40.13 20.0599 40C14.8501 39.8833 9.89301 37.7318 6.2497 34.006C2.6064 30.2801 0.566406 25.2761 0.566406 20.065C0.566406 14.8539 2.6064 9.84988 6.2497 6.12406C9.89301 2.39823 14.8501 0.246696 20.0599 0.130005V0.130005Z" fill="var(--color-text)"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_101_88">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+
