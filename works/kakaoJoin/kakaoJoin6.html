@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오계정 만들기</title>
+    <link rel="stylesheet" href="./kakaoJoin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <!-- 헤더 영역 시작 -->
+            <header>
+                <span class="logo">카카오 로고</span>
+            </header>
+            <!-- 헤더 영역 끝 -->
+
+            <!-- 메인 영역 시작 -->
+            <main>
+                <div class="subj">
+                    <div class="progress s5"></div>
+                    <h1 class="txt_bk t1">
+                        카카오계정 프로필을<br>
+                        설정해 주세요.
+                    </h1>
+                </div>
+                <form>
+                    <div class="unl">
+                        <h2 class="txt_gy t2">닉네임</h2>
+                        <label>
+                            <input class="txt_bk t2" id="nickname" type="text" maxlength="20" placeholder="닉네임 입력">
+                        </label>
+                    </div>
+                    <p class="txt_error">닉네임을 입력해 주세요.</p>
+                    <fieldset class="txt_bk t2 unl gy">
+                        <h2 class="txt_gy t2">생일</h2>
+                        <div class="birth"> 
+                            <dl id="yy">
+                                <dt class="arrow">연도</dt>
+                                <dd>
+                                    <ul class="select">
+                                        <li>1996</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl id="mm">
+                                <dt class="arrow">월</dt>
+                                <dd>
+                                    <ul class="select">
+                                        <li>08</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl id="dd">
+                                <dt class="arrow">일</dt>
+                                <dd>
+                                    <ul class="select">
+                                        <li>16</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="lunar">
+                                <dt>음력</dt>
+                                <dd>
+                                    <label>
+                                        <input id="lunar" type="checkbox">
+                                    </label>
+                                </dd>
+                            </dl>
+                        </div>
+                    </fieldset>
+                    <fieldset class="txt_bk t2" id="sex">
+                        <h2 class="txt_gy t2">성별</h2>
+                        <div class="sexSelect">
+                            <label>남성
+                                <input id="m" type="radio" name="sex">
+                            </label>
+                            <label>여성
+                                <input id="f" type="radio" name="sex">
+                            </label>
+                            <label class="on">선택안함
+                                <input  id="n" type="radio" name="sex" checked>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <p class="txt_error">생일을 정확하게 입력해 주세요.</p>
+                    <button type="submit" class="btn gy" name="clear">확인</button>
+                </form>
+            </main>
+            <!-- 메인 영역 끝 -->
+
+            <!-- 푸터 영역 시작 -->
+            <footer>
+                <ul>
+                    <li><a href="https://www.kakao.com/policy/terms?locale=ko" title="카카오계정 약관 페이지로 이동">이용약관</a></li>
+                    <li><a href="https://www.kakao.com/policy/privacy?locale=ko" title="카카오 개인정보처리방침 페이지로 이동" class="bold">개인정보 처리방침</a></li>
+                    <li><a href="https://www.kakao.com/policy/oppolicy?locale=ko" title="카카오 운영정책 페이지로 이동">운영정책</a></li>
+                    <li><a href="https://cs.kakao.com/" title="카카오 고객센터 페이지로 이동">고객센터</a></li>
+                    <li><a href="https://www.kakao.com/notices?locale=ko" title="카카오 서비스 공지사항 페이지로 이동">공지사항</a></li>
+                    <li class="langChoice" title="언어 선택">
+                        한국어
+                        <ul class="select">
+                            <li><a href="" title="한국어 회원가입 페이지로 이동"></a>한국어</li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=en#intro" title="영어 회원가입 페이지로 이동">English</a></li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=ja#intro" title="일본어 회원가입 페이지로 이동"></a>日本語</li>
+                        </ul>
+                    </li>
+                    <li class="copyright">Copyright © <a href="https://www.kakaocorp.com/page/" title="카카오 기업페이지로 이동">Kakao Corp.</a> All rights reserved.</li>
+                </ul>
+            </footer>
+            <!-- 푸터 영역 끝 -->
+        </div>
+    </div>
+
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./common.js"></script>
+</body>

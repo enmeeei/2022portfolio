@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오계정 만들기</title>
+    <link rel="stylesheet" href="./kakaoJoin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <!-- 헤더 영역 시작 -->
+            <header>
+                <span class="logo">카카오 로고</span>
+            </header>
+            <!-- 헤더 영역 끝 -->
+
+            <!-- 메인 영역 시작 -->
+            <main>
+                <div class="subj">
+                    <div class="progress s2"></div>
+                    <h1 class="txt_bk t1">
+                        카카오계정 가입을 위해<br>
+                        휴대폰 인증을 진행해 주세요.
+                    </h1>
+                </div>
+                <form>
+                    <div class="phoneAuth unl gy">
+                        <div class="nationNo arrow">+82
+                            <ul class="select">
+                                <li>(+1) Canada</li>
+                                <li>(+1) United States</li>
+                                <li>(+81) Japan</li>
+                                <li>(+63) Philiphines</li>
+                                <li>(+62) Indonesia</li>
+                                <li>(+84) Vietnam</li>
+                            </ul>
+                        </div>
+                        <label>
+                            <input class="txt_bk t2" id="phoneNo" type="tel" maxlength="11" placeholder="전화번호 입력">
+                        </label>
+                        <button type="button" name="del">입력 삭제</button>
+                        <button type="button" id="authReq">인증요청</button>
+                    </div>
+                    <p class="txt_error">잘못된 형식의 전화번호입니다. 정확한 전화번호를 입력해주세요.</p>
+                    <div class="unl">
+                        <label>
+                            <input class="txt_bk t2" id="authNo" type="text" maxlength="6" placeholder="인증번호 입력">
+                        </label>
+                        <button type="button" name="del">입력 삭제</button>
+                    </div>
+                    <p class="txt_error">인증번호 형식이 올바르지 않습니다.</p>
+                    <a class="txt_unl" id="authError">인증번호를 받지 못하셨나요?</a>
+                    <button class="btn grey" name="next">다음</button>
+                </form>
+                <div id="joinOption">
+                    <button type="button" name="exit">닫기</button>
+                    <dl>
+                        <dt class="txt_bk">
+                            사용 중인 카카오계정이 있나요?
+                        </dt>
+                        <dd class="txt_gy t2">
+                            카카오톡>더보기>설정>카카오계정에서 이전에 등록된 카카오계정을 확인 후 이용하실 수 있습니다. 카카오계정을 확인하고 로그인 해보세요.
+                        </dd>
+                        <dd class="txt_gy t2">
+                            사용 중인 카카오계정이 없다면, '계속해서 가입하기'를 선택해 주세요.
+                        </dd>
+                    </dl>
+                    <button type="submit" class="btn yellow">카카오계정으로 로그인하기</button>
+                    <button type="submit" class="btn grey">계속해서 가입하기</button>
+                </div>
+            </main>
+            <!-- 메인 영역 끝 -->
+
+            <!-- 푸터 영역 시작 -->
+            <footer>
+                <ul>
+                    <li><a href="https://www.kakao.com/policy/terms?locale=ko" title="카카오계정 약관 페이지로 이동">이용약관</a></li>
+                    <li><a href="https://www.kakao.com/policy/privacy?locale=ko" title="카카오 개인정보처리방침 페이지로 이동" class="bold">개인정보 처리방침</a></li>
+                    <li><a href="https://www.kakao.com/policy/oppolicy?locale=ko" title="카카오 운영정책 페이지로 이동">운영정책</a></li>
+                    <li><a href="https://cs.kakao.com/" title="카카오 고객센터 페이지로 이동">고객센터</a></li>
+                    <li><a href="https://www.kakao.com/notices?locale=ko" title="카카오 서비스 공지사항 페이지로 이동">공지사항</a></li>
+                    <li class="langChoice" title="언어 선택">
+                        한국어
+                        <ul class="select">
+                            <li><a href="" title="한국어 회원가입 페이지로 이동"></a>한국어</li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=en#intro" title="영어 회원가입 페이지로 이동">English</a></li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=ja#intro" title="일본어 회원가입 페이지로 이동"></a>日本語</li>
+                        </ul>
+                    </li>
+                    <li class="copyright">Copyright © <a href="https://www.kakaocorp.com/page/" title="카카오 기업페이지로 이동">Kakao Corp.</a> All rights reserved.</li>
+                </ul>
+            </footer>
+            <!-- 푸터 영역 끝 -->
+        </div>
+    </div>
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./common.js"></script>
+</body>

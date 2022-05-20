@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오계정 만들기</title>
+    <link rel="stylesheet" href="./kakaoJoin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <!-- 헤더 영역 시작 -->
+            <header>
+                <span class="logo">카카오 로고</span>
+            </header>
+            <!-- 헤더 영역 끝 -->
+
+            <!-- 메인 영역 시작 -->
+            <main>
+                <div class="subj">
+                    <div class="progress s4"></div>
+                    <h1 class="txt_bk t1">
+                        카카오계정으로 로그인에 사용할<br>
+                        비밀번호를 등록해 주세요.
+                    </h1>
+                </div>
+                <dl class="account">
+                    <dt class="txt_gy t3">카카오계정</dt>
+                    <dd>emlisha@kakao.com</dd>
+                </dl>
+                <form>
+                    <div class="password unl">
+                        <label class="txt_gy t2"> 비밀번호
+                            <input class="txt_bk t2" id="password1" type="password" name="password" maxlength="32" placeholder="비밀번호 입력(8~32자리)">
+                        </label>
+                        <button type="button" name="del">입력 삭제</button>
+                    </div>
+                    <p class="txt_error">비밀번호는 8~32자리(영문자/숫자/특수문자)로 입력할 수 있어요.</p>
+                    <div class="unl gy">
+                        <label>
+                            <input class="txt_bk t2" id="password2" type="password" name="password" maxlength="32" placeholder="비밀번호 재입력(8~32자리)">
+                        </label>
+                        <button type="button" name="del">입력 삭제</button>
+                    </div>     
+                    <p class="txt_error">입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다.</p>
+                    <ul class="joinInfo txt_gy t3">
+                        <li>비밀번호는 8~32자리의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해 주세요.</li>
+                        <li>다른 사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.</li>
+                        <li>안전한 계정 사용을 위해 비밀번호는 주기적으로 변경해 주세요.</li>
+                    </ul>
+                    <button type="submit" class="btn grey" name="next">다음</button>
+                </form>
+            </main>
+            <!-- 메인 영역 끝 -->
+
+            <!-- 푸터 영역 시작 -->
+            <footer>
+                <ul>
+                    <li><a href="https://www.kakao.com/policy/terms?locale=ko" title="카카오계정 약관 페이지로 이동">이용약관</a></li>
+                    <li><a href="https://www.kakao.com/policy/privacy?locale=ko" title="카카오 개인정보처리방침 페이지로 이동" class="bold">개인정보 처리방침</a></li>
+                    <li><a href="https://www.kakao.com/policy/oppolicy?locale=ko" title="카카오 운영정책 페이지로 이동">운영정책</a></li>
+                    <li><a href="https://cs.kakao.com/" title="카카오 고객센터 페이지로 이동">고객센터</a></li>
+                    <li><a href="https://www.kakao.com/notices?locale=ko" title="카카오 서비스 공지사항 페이지로 이동">공지사항</a></li>
+                    <li class="langChoice" title="언어 선택">
+                        한국어
+                        <ul class="select">
+                            <li><a href="" title="한국어 회원가입 페이지로 이동"></a>한국어</li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=en#intro" title="영어 회원가입 페이지로 이동">English</a></li>
+                            <li><a href="https://accounts.kakao.com/weblogin/create_account/?continue=https%3A%2F%2Fwww.daum.net&lang=ja#intro" title="일본어 회원가입 페이지로 이동"></a>日本語</li>
+                        </ul>
+                    </li>
+                    <li class="copyright">Copyright © <a href="https://www.kakaocorp.com/page/" title="카카오 기업페이지로 이동">Kakao Corp.</a> All rights reserved.</li>
+                </ul>
+            </footer>
+            <!-- 푸터 영역 끝 -->
+        </div>
+    </div>
+
+
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./common.js"></script>
+</body>
+</html>
