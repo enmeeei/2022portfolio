@@ -1,0 +1,197 @@
+@charset "utf-8";
+body {
+    text-align: center;
+}
+input {
+    display: none;
+    position: absolute; 
+
+}
+
+/* --------------------
+          헤더
+-------------------- */
+header {
+    padding: 60px 0 54px;
+    box-sizing: border-box;
+}
+.main-logo {
+display: block;
+background: url(https://ssl.pstatic.net/static/nid/join/m_logo_naver.png) no-repeat center; background-size: contain;
+text-indent: -9999rem; overflow: hidden;
+cursor: pointer;
+}
+header h1 .main-logo {
+    margin: 0 auto;
+    width: 240px; height:44px; 
+}
+header ul {
+    display: inline-block;
+    position: absolute;
+    padding: 8px 8px 7px 9px;
+    top: 1.5rem; right: 1rem;
+    min-width: 95px;
+    background: #f5f6f7;
+    border: 1px solid #dadada; box-sizing: border-box;
+}
+header ul::before {
+    content: ''; display: block; position: absolute;
+    top: 8px; right: 8px;
+    width: 8px; height: 8px;
+    border: 1px solid #a5a5a5;
+    border-width: 1px 1px 0 0;
+    transform: rotate(135deg);
+}
+header ul li {
+    height: 20px;
+    color:#333; font-size: 12px; line-height: 20px; text-align: left;
+    cursor: pointer;
+}
+header ul .langA{
+    display: none;
+}
+header ul .langA.active {
+    display: block;
+}
+header ul li a{
+    color: #333;
+}
+
+
+
+/* --------------------
+          메인
+-------------------- */
+main{
+    margin: 0 auto;
+    width: 460px;
+    text-align: left;
+}
+form div {
+    position: relative;
+}
+form div+div {
+    margin-top: 30px;
+}
+form label {
+    position: relative;
+    display: block;
+    padding-left: 29px;
+    width: 100%;
+    font-size: 14px; font-weight: 700; line-height: 21px;
+    color: #333;
+    cursor: pointer;
+}
+form div label::before {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0;
+    width: 20px; height: 20px;
+    background: url(https://static.nid.naver.com/images/ui/myinfo/m_check_off_24.png) no-repeat center;
+    background-size: contain;
+}
+form div input:checked + label::before  {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0;
+    width: 20px; height: 20px;
+    background: #f5f6f7 url(https://static.nid.naver.com/images/ui/myinfo/pc_check_on_l_24.png) no-repeat center;
+    background-size: contain;
+}
+form div:first-of-type label{
+    padding-left: 34px;
+    text-decoration: underline;
+}
+form div:first-of-type label::before {
+    top: 0;
+    width: 24px; height: 24px;
+}
+form div:first-of-type input:checked + label::before  {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0;
+    width: 24px; height: 24px;
+    background: #f5f6f7 url(https://static.nid.naver.com/images/ui/myinfo/pc_check_on_l_24.png) no-repeat center;
+    background-size: contain;
+}
+form .ess-green {
+    color:#08a600; font-size: 12px; font-weight: 400;
+}
+form textarea {
+    display: block;
+    margin-top: 13px; padding: 12px;
+    width: calc(100% - 24px); height: 88px;
+    font-size: 12px;
+    background-color: #fff; border: 1px solid #dadada; border-radius: 0;
+    resize: none;
+}
+form #termForChild {
+    position: absolute;
+    margin-top: -4.5px; padding: 6px 8px;
+    top: 0; right: 0;
+    color:#08a600;
+    background-color: #fff;
+    border: 1px solid #08a600;
+}
+form .chk-grey {
+    color: #8e8e8e; font-size: 12px; font-weight: 400;
+}
+form div:last-of-type text {
+    display: block;
+    padding-top: 10px;
+    color: #666;
+}
+form .btn-area {
+    display: flex; justify-content: space-between;
+    margin-top: 30px;
+}
+form .btn-area a {
+    display: block;
+    padding: 15px 0;
+    width: calc(50% - 5px);
+    text-align: center; 
+    color: #fff; font-size: 18px;
+}
+form .btn-area .btnCancel {
+    background-color: #8e8e8e;
+}
+form .btn-area .btnAgree {
+    background-color: #03c75a;
+}
+main .group-join {
+    margin-top: 20px;
+    text-align: center;
+}
+main .group-join .btn-group-join {
+    color: #333; text-decoration: underline;
+}
+
+
+
+/* --------------------
+          푸터
+-------------------- */
+footer {
+    margin: 30px 0 15px;
+    text-align: center;
+}
+footer > div {
+    margin-bottom: 9px;
+    color: #7e7e7e;
+}
+footer > div a {
+    padding: 0 3px;
+    color: #7e7e7e; font-size: 12px;
+}
+footer .main-logo {
+    display: inline-block;
+    width: 63px; height:12px; 
+}
+footer .naverCorp {
+    display: inline-block;
+    font: bold 9px verdana; color: #333;
+}
+footer span {
+    padding-left: 4px;
+    font: 9px verdana;
+}

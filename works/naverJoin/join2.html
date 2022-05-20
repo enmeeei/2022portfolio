@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style></style>
+    <title>네이버 : 회원가입</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="join2-style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="http://www.naver.com" class="main-logo">네이버</a>
+        </h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <div class="int">
+                    <label for="id">아이디</label>
+                    <input type="text" id="id" name="id" maxlength="20">
+                    <span class="email">@naver.com</span>
+                    <span class="error ty1"></span>
+                </div>   
+                <div class="int">
+                    <label for="pw1">비밀번호</label>
+                    <input type="password" id="pw1" name="password" maxlength="20">
+                    <span class="visible pw1"></span>
+                </div>  
+                <div class="int">
+                    <label for="pw2">비밀번호 재확인</label>
+                    <input type="password" id="pw2"name="password" maxlength="20">
+                    <span class="visible pw2"></span>
+                    <span class="error ty3">비밀번호가 일치하지 않습니다</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="int">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="int">
+                <legend>생년월일</legend>
+                    <div class="birthday">
+                        <label>
+                            <input type="text" id="yy" name="birthday" placeholder="년(4자)" maxlength="4"> 
+                        </label>       
+                        <label>     
+                            <select id="mm" name="birthday">
+                                <option value selected>월</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                        </select>
+                        </label>
+                        <label>
+                            <input type="text" id="dd" name="birthday" placeholder="일" maxlength="2">
+                        </label>
+                    </div>
+                </div>
+                <div class="int"> 
+                    <label for="sex">성별</label>
+                        <select id="sex" name="sex">
+                            <option value selected>성별</option>
+                            <option value="m">남자</option>
+                            <option value="w">여자</option>
+                            <option value="n">선택 안함</option>
+                        </select>
+                </div>
+                <div class="int">
+                    <label for="email">본인 확인 이메일<span class="chk-grey">(선택)</span></label>
+                    <input type="email" id="email" name="email" placeholder="선택입력" maxlength="50">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <div class="int">
+                        <legend>휴대전화</legend>
+                        <label for="nationNo">
+                            <select id="nationNo" name="phone">
+                                <option value="82">대한민국+82</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="phoneAuth">
+                        <label for="phoneNo">
+                            <input type="tel" id="phoneNo" name="phone" placeholder="전화번호 입력" maxlength="10">
+                        </label>
+                        <button type="submit">인증번호 받기</button>
+                    </div>
+                    <div>
+                        <label for="authNo">
+                            <input type="number" id="authNo" name="phone" placeholder="인증번호 입력하세요" disabled maxlength="4">
+                        </label>
+                        <span class="success"></span>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" id="btnJoin">가입하기</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://policy.naver.com/rules/service.html">이용약관</a>|
+            <a href="https://policy.naver.com/policy/privacy.html">개인정보처리방침</a>|
+            <a href="https://policy.naver.com/rules/disclaimer.html">책임의 한계와 법적고지</a>|
+            <a href="https://help.naver.com/support/service/main.help?serviceNo=532&_membership_p.membership_p.membership_26&from=alias" target="_blank">회원정보 고객센터</a>
+        </div>
+        <address>
+            <a href="http://www.naver.com" class="main-logo">네이버 홈페이지</a>
+            <span>Copyright</span>
+            <a href="http://www.navercorp.com" target="_blank" class="naverCorp">NAVER Corp.</a>
+            <span>All Rights Reserved.</span>
+        </address>
+    </footer>
+    
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./join2-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html, body {
+    font-size: 12px;
+}
+body {
+    position: relative;
+    background: #f5f6f7;
+}
+* {
+    margin: 0; padding: 0;
+}
+body, button, input, select, table, textarea {
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+fieldset {
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+
