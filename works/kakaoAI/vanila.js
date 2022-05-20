@@ -10,5 +10,3 @@ const mouseFunc = (e) => {
 window.onload = () => {
     banner.addEventListener("mousemove", mouseFunc);
 }
-
-let bannerWidth = document.body.offsetWidth;
