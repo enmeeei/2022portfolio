@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+    url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: bold;
+    font-weight: 600;
+    src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+    url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+
+/* Reset */
+ * {box-sizing: border-box; -webkit-box-sizing: border-box;}
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;font-family:'NotoSansKR',"맑은고딕",'Malgun Gothic',"애플 SD 산돌고딕 Neo","Apple SD Gothic Neo","나눔고딕",NanumGothic,"돋움",dotum,AppleGothic,arial,sans-serif;letter-spacing:-1px;box-sizing:border-box; list-style:none; font-display:swap; }
+html, body{width:100%; text-align: center; -webkit-text-size-adjust:none; font-size:10px;}
+html{-webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body,input,select,textarea {border:none;font-size:inherit;}
+button {border:none;font-size:inherit; color:#727272;}
+ul,ol,li{list-style:none;}
+label,img,input,select,textarea,button{vertical-align:middle;}
+main,header,section,nav,footer,aside,article,figure{display:block;}
+a{color:#000;text-decoration:none;}

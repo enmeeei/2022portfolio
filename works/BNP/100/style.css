@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+.main-banner {
+    padding-top: 6rem; padding-bottom: 320px; 
+     width:100vw; 
+     color:#fff; 
+     text-align: center; 
+     background:url(/works/BNP/images/img_day100@3x.png) no-repeat center bottom; 
+     background-size: cover;
+    } 
+.main-banner .tit1-1 {
+    font-size: 4rem; 
+    font-weight: 700; 
+    line-height: 6rem;
+}
+.main-banner .tit1-2 {
+    margin-top: 20px; 
+    font-size: 2.4rem; line-height: 3.2rem;
+}
+.main-banner ul {
+    display:flex; justify-content: center; align-items: center; 
+    position: relative; 
+    margin-top: 3rem;
+}
+.main-banner li {
+    position: relative; 
+    width:4.4rem; height:4.4rem; 
+    font-size: 1.6rem; line-height: 4.4rem; 
+    background: #00915a; 
+    border-radius: 50%;
+    background: #00915a; border-radius: 50%; box-shadow: 0 0 0 2px #219f6f inset;
+}
+.main-banner li[aria-current] {
+    background:#fff;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%)
+}.main-banner li[aria-current] a {
+    color:#00915a; font-weight: 700;
+}
+.main-banner li + li {
+    margin-left: 2.6rem;
+}
+.main-banner li:not(:nth-of-type(1))::before {
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    left:-2.6rem; top:calc(50% - 1px); 
+    width: 2.6rem; height: 2px; 
+    background: rgba(255,255,255,0.5);
+}
+.main-banner li:last-of-type {
+    width: 6rem; height: 6rem;
+    line-height: 6rem;
+}
+.main-banner li a {
+    color: #fff;
+}
+.lv5 {
+    position: relative; 
+    padding: 6rem 0; 
+    text-align: center;
+}
+.lv5 span {
+    display:inline-block; 
+    margin-right: 2rem; 
+    padding:0 2rem; 
+    color:#fff;  font-size: 1.6rem; font-weight: 700; line-height:3rem; 
+    background: #00915a; 
+    border-radius: 5rem;
+}
+.lv5 h2 {
+    display: inline-block; 
+    font-size: 2.4rem; font-weight: bold; line-height: 3.2rem;
+}
+.lv5 h3 {
+    position: relative; 
+    margin:3rem 0 2rem; 
+    padding-top: 24.2rem; 
+    color:#00915a; font-size: 2.4rem; font-weight: 700; 
+}
+.lv5 h3::before {
+    content:''; 
+    display: block; 
+    position: absolute; 
+    margin-left: -12.4rem; 
+    top:0; left:50%; 
+    width:24.8rem; height:21.2rem; 
+    background: url(/works/BNP/images/img_box_07.png) center; background-size: contain;
+}
+.lv5 p + p {
+    margin-top: 1rem;
+}
+
+.info-5 {
+    padding:6rem; 
+    background: #f7f8f9;
+}
+.info-5 h2 , p {
+    text-align: center;
+}
+.info-5 h2 {
+    font-size: 2.8rem; font-weight: 700; line-height: 3.6rem;
+}
+.info-5 > p {
+    margin-top: 1rem;
+}
+.info-5 > p + p {
+    margin-top: 2rem;
+}
+.info-5 article {
+    margin: 6rem auto 0; 
+    max-width: 58rem; width: 100%; 
+    padding: 6rem 5rem;
+    background: #fff; 
+    border-radius: 3rem; 
+    box-shadow:0 2px 4px 0 rgb(0 0 0 / 16%)
+}
+.info-5 ul {
+    padding-bottom:3rem; 
+    margin-bottom: 3rem; 
+    border-bottom: 1px solid #b4b4b4;
+}
+.info-5 li {
+    position: relative; 
+    padding-left: 11rem;
+}
+.info-5 li:not(:nth-of-type(1)) {
+    margin-top: 3rem;
+}
+.info-5 li:nth-of-type(1):before {
+    content: ''; 
+    position: absolute; 
+    left:0rem; 
+    height: 9rem; width: 9rem;
+    background: url(/works/BNP/images/sm_instagram.png) no-repeat center; background-size: contain;
+    }
+.info-5 li:nth-of-type(2):before {
+    content: ''; 
+    position: absolute; 
+    left:0rem; 
+    height: 9rem; width: 9rem; 
+    background: url(/works/BNP/images/sm_naver.png) no-repeat center; background-size: contain;
+}
+.info-5 li:nth-of-type(3):before {
+    content: ''; 
+    position: absolute; 
+    left:0rem;
+     height: 9rem; width: 9rem; 
+     background: url(/works/BNP/images/sm_facebook.png) no-repeat center; background-size: contain;
+    }
+.info-5 dt {
+    font-weight: 700;
+}
+.info-5 dd {
+    margin-top: 0.6rem;
+}
+.info-5 li a {
+    display: inline-block; 
+    position: relative; 
+    margin-top: 0.6rem; 
+    width: 12rem; 
+    color: #00915a;
+}
+.info-5 li a:before {
+    content:''; 
+    position:absolute; 
+    margin-left: 7rem; 
+    top:0.2rem; 
+    height:2rem; width: 2rem; 
+    background: #000; 
+    border-radius: 50%;
+}
+.info-5 li a:after {
+    content:''; 
+    position: absolute; 
+    margin-left: 2rem; 
+    top: 0.6rem; 
+    width:1rem; 
+    border-left: 0.7rem solid #fff; 
+    border-top: 0.5rem solid transparent; 
+    border-right: 0.8rem solid transparent; 
+    border-bottom: 0.5rem solid transparent;
+}
+
+.review {
+    text-align: center;
+}
+.review dt {
+    display: inline-block; 
+    margin-bottom: 2rem; 
+    padding: 1.2rem 8rem; 
+    text-align: center; 
+    border:1px solid #00915a; border-radius: 5rem;
+}
+.review dd {
+    position: relative; 
+    margin-top: 1rem; 
+    text-align: left;
+}
+.review a {
+    text-decoration: underline; 
+    color: #00915a; 
+}
+.review a:after {
+    content:''; 
+    display: block; 
+    position: absolute; 
+    right:0; top:0rem; 
+    height: 4rem; width: 2rem; 
+    background: url(/works/BNP/images/icon_arrow_right_on_black.png) no-repeat right top; background-size: contain;
+}
+
+.info-5 .tit2-1 {
+    margin: 3rem 0 2rem; 
+    color:#00915a; font-size: 2.4rem; font-weight: 700; line-height: 3.2rem; 
+} 
+.info-5 p + p {
+    margin-top: 1rem;
+}
+.info-5 article > a {
+    display: block; 
+    margin:6rem auto 0; 
+    padding:1.5rem 0; 
+    width: calc(100% - 9.6rem); 
+    color: #fff; 
+    text-align: center; 
+    background: #00915a; 
+    border-radius: 0.4rem;
+}

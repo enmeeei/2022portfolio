@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+body {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+/* 상단 메인 이미지 */
+.top {
+    position: relative;
+    height: 62.8rem;
+    background: url(/works/BNP/images/img_day70@3x.png) no-repeat center bottom; background-size: cover;    
+}
+.main-visual {
+    position: absolute;
+    margin-left: -50vw; padding-top: 6rem;
+    top:0; left:50%;
+    width: 100vw;
+    color: #fff;    
+}
+.main-visual b {
+    font-size: 4rem; font-weight: 700; line-height: 6rem;
+}
+.main-visual p {
+    margin-top: 2rem;
+    font-size: 2.4rem; line-height: 3.2rem;
+}
+.main-visual ul {
+    display: flex;
+    justify-content: center; align-items: center;
+    margin-top: 3rem;
+}
+.main-visual li {
+    position: relative;
+    width: 4.4rem; height: 4.4rem;
+    font-size: 1.6rem; line-height: 4.4rem;
+    background: #00915a; border-radius: 50%; box-shadow: 0 0 0 2px #219f6f inset;
+}
+.main-visual li + li {
+    margin-left: 2.8rem;
+}
+.main-visual li + li::before {
+    content: '';
+    display: block; position: absolute;
+    left: -2.8rem; top:50%;
+    width:2.6rem;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.main-visual li[aria-current] {
+    background:#fff;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%)
+}
+.main-visual a {
+    color:#fff;
+}
+.main-visual li[aria-current] a {
+    color: #00915a;
+    font-weight: 700;
+}
+.main-visual li:last-of-type {
+    width: 6rem; height: 6rem;
+    line-height: 6rem;
+}
+@media only screen and (max-width: 900px) {
+
+    .top {
+        height: 44.7rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        background: url(/works/BNP/images/img_mo_day70.png) no-repeat center bottom; background-size: cover;
+    }
+    .main-visual {
+        padding-top: 3rem;
+    }
+    .main-visual b {
+        font-size: 2.6rem; line-height: 3.8rem;
+    }
+    .main-visual p {
+        margin-top: 1.4rem;
+        font-size: 1.6rem; line-height: 2.4rem;
+    }
+}
+
+/* 메인 콘텐츠 */
+.center {
+    background: #f7f8f9;
+}
+.lv3 {
+    padding: 6rem 0;
+    background: #fff;
+}
+.lv3 h2 span {
+    display: inline-block;
+    margin-right: 2rem; padding: 0 2rem;
+    height: 3rem;
+    color: #fff; font-size: 1.6rem; font-weight: 700; line-height: 3rem;
+    background: #00915a; border-radius: 5rem;
+}
+.lv3 h2 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem; font-weight: bold; line-height: 3.2rem;
+}
+
+.main {
+    padding: 6rem 0 3rem;
+}
+.main > p {
+    margin-top: 2rem;
+    line-height: 2.6rem;
+}
+.main .m {
+    display: none;
+}
+.box-wrap {
+    margin: 6rem auto;
+    max-width: 120rem;
+}
+.box-wrap article {
+    position: relative;
+    background: #fff;
+    border-radius: 3rem; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%);
+    overflow: hidden;
+}
+.box-wrap > article {
+    padding: 22rem 0 15rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.box-wrap > article::before {
+    content: '';
+    display: block; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 19rem;
+    background: linear-gradient(to right, #aab0f4, #7f89ea);
+}
+.box-wrap > article::after {
+    content: ''; display: block; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 19rem;
+    background: url(/works/BNP/images/img_box_02.png) no-repeat center; background-size: 18rem;
+}
+.title-green {
+    color: #00915a;
+    font-size: 2.8rem; font-weight: 700; line-height: 3.6rem; letter-spacing: -2px;
+}
+
+.box-wrap article > p {
+    margin-top: 2rem;
+}
+.box-wrap dl {
+    margin-top: 4rem;
+}
+.box-wrap dt {
+    display: inline-block;
+    margin-bottom: 1rem; padding: 0 2.2rem;
+    height: 5rem;
+    font-weight: 700; line-height: 5rem;
+    border: 1px solid #00915a; border-radius: 5rem;
+}
+.box-wrap a {
+    display: inline-block; position: absolute;
+    padding: 1.5rem 5.8rem;
+    left: 50%; bottom: 6rem;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #00915a; border-radius: 4px;
+}
+.box-wrap > div {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-top: 6rem;
+}
+.box-wrap > div article {
+    position: relative;
+    width: calc(50% - 2rem);
+    padding: 10.5rem 2rem 16rem;
+}
+.box-wrap > div article h3 {
+    position: absolute;
+    padding: 2rem 2rem 1.5rem;
+    top: 0; left: 0; right:0; 
+    color: #fff; font-size: 2.8rem; font-weight: 700; line-height: 3.6rem; letter-spacing: -2px;
+    background: linear-gradient(to right, #aab0f4, #7f89ea);
+}
+.box-wrap .swiper a {
+    position: relative;
+    margin-top: 3rem; padding: 1.6rem 6rem 1.6rem 3rem;
+    left: initial;  bottom: initial;
+    width: auto; transform: none;
+    color: #424242;
+    background: #e6e6e6; border-radius: 5rem;
+}
+    /* css로 열심히 화살표 만들었는데 png이미지였어... 배신감 */
+.box-wrap .swiper a::before{
+    content: ''; display: block; position: absolute;
+    margin-top: -1rem;
+    top: 50%; right: 2rem;
+    width: 2rem; height: 2rem;
+    background: url(/works/BNP/images/icon_detail.png) no-repeat center; background-size: contain;
+}
+.box-wrap > div dl {
+    margin: 4rem 5rem 0;
+    word-break: keep-all;
+}
+.box-wrap > div dt {
+    margin-bottom: 2rem; padding: 1.2rem 2rem;
+    height: auto;
+    line-height: 2.6rem;
+}
+.box-wrap > div dd {
+    position: relative;
+    text-align: left;
+    margin: 1rem auto; padding-left: 1.2rem;
+    width: 27rem;
+    letter-spacing: -2px;
+}
+.box-wrap > div dd:last-of-type {
+    margin-bottom: 0;
+}
+.box-wrap > div dd::before {
+    content: ''; display: block; position: absolute;
+    top: 1.4rem; left: 0;
+    width: 3px; height: 3px;
+    background: #444; border-radius: 50%;
+}
+.box-wrap > div a { 
+    width: calc(100% - 19.8rem);
+}
+
+.box-wrap h4 {
+    position: relative;
+    margin-bottom: 2rem; padding-top: 23.6rem;
+}
+.box-wrap h4::before {
+    content: ''; display: block; position: absolute;
+    margin-top: 2rem; 
+    top: 0; left: 0; right: 0;
+    width: 100%; height: 21.6rem;
+    background: url(/works/BNP/images/img_box_03.png) no-repeat center; background-size: contain;
+}
+.box-wrap ol {
+    margin-bottom: 3rem;
+}
+.box-wrap ol li + li {
+    margin-top: 1rem;
+}
+.box-wrap strong {
+    font-weight: 700;
+}
+.box-wrap .green  {
+    display: inline-block; position: relative;
+    margin-top: 3rem; padding: 0 2.6rem 0 0;
+    width: auto;
+    left: 0; bottom: 0;
+    transform: none;
+    color: #00915a; letter-spacing: -2px;
+    background: none; text-decoration: underline;
+}
+.box-wrap .green::after {
+        content: ''; display: block; position: absolute;
+        top: 0.4rem; right: 0rem;
+        width: 2rem; height: 2rem;
+        background: url(/works/BNP/images/icon_detail.png) no-repeat; background-size: contain;
+}
+@media only screen and (max-width: 900px) {
+    .lv3 {
+        padding: 3rem 0;
+    }
+    .main {
+        padding: 3rem 2rem;
+    }
+    .main .m {
+        display: block;
+    }
+    .box-wrap {
+        margin: 3rem auto 0;
+        max-width: 120rem;
+    }
+    .box-wrap a {
+        position: relative;
+        margin-top: 3rem; padding: 1.5rem 5.8rem;
+        left: inherit; bottom: inherit;
+        transform: translateX(0);
+        color: #fff;
+        background: #00915a; border-radius: 4px;
+    }
+    .box-wrap > article {
+        position: relative;
+        padding: 22rem 2rem 3rem;
+    }
+    .box-wrap > div {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .box-wrap > div article {
+        position: relative;
+        width: 100%; padding: 6.6rem 2rem 3rem;
+    } 
+    .box-wrap > div a { 
+        width: 100%;
+    }
+    .box-wrap > div article h3 {
+        position: absolute;
+        padding: 1rem 2rem;
+        top: 0; left: 0; right:0; 
+        color: #fff; font-size: 2.4rem; font-weight: 700; line-height: 3.2rem; letter-spacing: -2px;
+        background: linear-gradient(to right, #aab0f4, #7f89ea);
+    }
+    .box-wrap > div > article + article {
+        margin-top: 3rem;
+    }
+    .box-wrap h4 {
+        padding-top: 21rem;
+        word-break: keep-all;
+    }
+    .box-wrap h4::before {
+        height: 53vw; max-height: 18.1rem;
+    }
+}
+
+/* 하단 유의사항 */
+section + section { 
+    padding: 6rem 0;
+    text-align: left;
+}
+.inner {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.inner h2 {
+    margin-bottom: 1rem;
+}
+.info-title {
+    position: relative;
+}
+.info-title button {
+    display: block; position: absolute;
+    top: 0;
+    width: 100%; height: 3rem;
+    background: transparent;
+    text-indent: -9999rem; overflow: hidden;
+    cursor: pointer;
+}
+.info-title button::after {
+    content: ''; display: block; position: absolute;
+    top: 0; right: 0;
+    width: 3rem; height: 3rem;
+    background: url(https://www.cardif.co.kr/img/common/icon_arrow_gray.png) no-repeat center; background-size: contain;
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+.info-title button.open::after {
+    transform: rotate(0deg);
+}
+.info-title h3 {
+    position: relative;
+    margin-top: 3rem;
+    font-weight: bold; line-height: 3rem; text-indent: 4rem;
+}
+.info-title.t1 h3 {
+    background: url(/works/BNP/images/icon_info_question.png) no-repeat left center; background-size: contain;
+}
+.info-list {
+    margin-top: 3rem;
+}
+.info-list.t1 dt {
+    padding-left: 2rem;
+    font-size: 1.6rem; font-weight: 700; color: #424242;
+}
+.info-list.t1 dt:not(:first-of-type) {
+    margin-top: 1rem;
+}
+.info-list.t1 dd {
+    padding-left: 2rem;
+    color: #424242; font-size: 1.6rem; 
+}
+.info-title.t2 h3 {
+    background: url(/works/BNP/images/icon_info.png) no-repeat center left; background-size: contain;
+}
+.info-list.t2 li {
+    position: relative;
+    padding: 0 0 0 3.4rem;
+    font-size: 1.6rem;
+}
+.info-list.t2 > li::before {
+    content: ''; display: block; position: absolute;
+    left: 2rem; top: 1.1rem;
+    width: 4px; height: 4px;
+    background: #797979; border-radius: 50%;
+}
+.info-list.t2 li + li {
+    margin-top: 0.6rem;
+}
+.info-list.t2 ol li {
+    margin: 0 0 0 1.6rem; padding: 0;
+    list-style: number;
+}
+@media only screen and (max-width: 900px) {
+    section + section { 
+        padding: 3rem 2rem;
+    }
+    .info-title {
+        margin-top: 3rem;
+    }
+    .info-title h3 {
+        margin: 0.4rem 0;
+        font-size: 1.6rem; line-height: 1; text-indent: 2.4rem;
+    }
+    .info-title button {
+        top: -0.4rem;
+        height: 2.4rem;
+    }
+    .info-title button::after {
+        width: 2.4rem; height: 2.4rem;
+    }
+    .info-list {
+        margin-top: 2.3rem;
+    }
+    .info-list.t1 dt {
+        padding-left: 1rem;
+        font-size: 1.4rem; line-height: 2rem;
+    
+    }
+    .info-list.t1 dd {
+        padding-left: 1rem;
+        font-size: 1.4rem; line-height: 2rem;
+    }
+    .info-list.t2 li {
+        padding: 0 0 0 2rem;
+        font-size: 1.4rem; line-height: 2rem;
+    }
+    .info-list.t2 > li::before {
+        left: 1rem;
+    }
+}

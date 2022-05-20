@@ -1,0 +1,566 @@
+@charset "utf-8";
+
+/* 메인 배너 */
+.main-banner {
+    position: relative; padding-top: 6rem; 
+    text-align: center; 
+    height: 62.8rem; 
+    color:#fff; 
+    background: url(/works/BNP/images/img_day30@3x.png) no-repeat center bottom; background-size: cover; 
+}
+.main-banner .tit1-1 {
+    font-size: 4rem; font-weight: 700; line-height: 6rem;
+}
+.main-banner .tit1-2 {
+    margin-top: 2rem; 
+    font-size: 2.4rem; line-height: 3.2rem;
+}
+.main-banner ul {
+    display: flex; justify-content: center; align-items: center;  
+    margin-top: 3rem; 
+}
+.main-banner li {
+    position: relative; 
+    width:4.4rem; height: 4.4rem; 
+    background: #00915a; 
+    border-radius: 50%; box-shadow: 0 0 0 0.2rem #219f6f inset;
+} 
+.main-banner li + li {
+    margin-left: 2.6rem;
+}
+.main-banner li:not(:nth-of-type(1)):before {
+    content: ''; position: absolute; 
+    top: 50%; left: -2.6rem; 
+    width:2.4rem; 
+    border:1px solid #fff;
+}
+.main-banner li:last-of-type {
+    width: 6rem; height: 6rem; 
+    line-height: 6rem;
+}
+.main-banner li[aria-current] {
+    font-weight: bold; 
+    background:#fff; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 16%);
+}
+.main-banner li[aria-current] a {
+    color:#00915a;
+}
+.main-banner li a {
+    color: #fff; font-size: 1.6rem; line-height: 4.4rem
+}
+.main-banner > a {
+    display: block; position: absolute; 
+    left:calc(50% + 20rem); bottom:5rem; 
+    width:12.6rem; height: 12.6rem; 
+    background: url(/works/BNP/images/btn-image01.png) center; background-size: contain;
+}
+@media only screen and (max-width: 900px){
+    .main-banner {
+        padding-top: 3rem;
+        height: 44.7rem;
+    }
+    .main-banner .tit1-1 {
+        font-size: 2.6rem; line-height: 3.8rem;
+    }
+    .main-banner .tit1-2 {
+        font-size: 1.6rem; line-height: 2.4rem;
+    }
+}
+
+/* 레벨2 시작 */
+section {
+    font-size: 1.8rem; line-height: 2.6rem;
+}
+.lv2 {
+    padding:6rem;
+}
+.lv2 h2 {
+    font-size: 2.4rem; line-height: 3.2rem;
+}
+.lv2 span {
+    display: inline-block; margin-right: 2rem; 
+    width: 6.5rem; 
+    font-size: 1.6rem; line-height: 2.6rem; color:#fff; 
+    background: #00915a; border-radius: 5rem;
+}
+.lv2 > p {
+    margin-top: 1rem;
+}
+@media only screen and (max-width: 900px){
+    .lv2 {
+        padding:3rem 2rem;
+    }
+}
+
+.main {
+    padding: 6rem 0; 
+    background: #f7f8f9;
+}
+.main .tit2-1 {
+    margin-bottom: 2rem; 
+    font-size: 2.8rem; font-weight: 700; line-height: 3.2rem;
+}
+@media only screen and (max-width: 900px){
+    .main {
+        padding: 3rem 2rem;
+    }
+    .main .tit2-1 {
+        margin-bottom: 1rem;
+    } 
+}
+
+.box-wrap {
+    display: flex; justify-content: /*center말고*/space-between; 
+    margin: 5.5rem auto 0;
+    width: 100%;
+    max-width: 120rem;
+    padding-top: 6rem;
+}
+.box-wrap article {
+    position: relative; 
+    padding: 22rem 4.92vw 16rem; 
+    width: calc(50% - 2rem); 
+    border: 1px solid #eee; border-radius: 3rem; 
+    background:#fff; box-shadow: 0 0.2rem 0.4rem 0 rgba(0 0 0 / 5%); 
+    overflow: hidden;
+}
+.box-wrap article:before {
+    content: ''; position: absolute; 
+    top:0; left:0; right:0; 
+    height: 19rem; 
+    background:linear-gradient(to right, #aab0f4,#7f89ea);
+} 
+    /*top:0; left:0; right:0; 선언해줘야 보이네...*/
+.box-wrap article:after {
+    content: ''; display: block; position: absolute; 
+    top:0; left:0; 
+    right:0; height: 19rem;
+}
+.box-wrap article:nth-of-type(1):after {
+    background: url(/works/BNP/images/img_box_01.png) no-repeat center; background-size: 18rem; 
+}
+.box-wrap article:nth-of-type(2):after {
+    background: url(/works/BNP/images/img_box_02.png) no-repeat center; background-size: 18rem;
+}
+.box-wrap article .tit3-1 {
+    margin-bottom: 3rem; 
+    color: #00915a; font-size: 2.8rem; font-weight: 700; line-height: 3.6rem;
+}
+.box-wrap article dl {
+    padding: 4rem 5rem 0;
+}
+.box-wrap article dt {
+    display: inline-block; 
+    padding: 0 2.2rem; 
+    height: 5rem; 
+    font-size: 1.8rem; font-weight: 700; line-height: 4rem; 
+    border: 1px solid #00915a; border-radius: 5rem;
+}
+.box-wrap article dd {
+    margin-top: 1rem;
+    word-break: keep-all;
+}
+.box-wrap article .ul dd {
+    position: relative; text-align: left;
+}
+.box-wrap article .ul dd::before {
+    content: ''; display: block; 
+    position: absolute; 
+    margin: -0.2rem -1rem; left:0; top:1.3rem; width: 0.3rem; height: 0.3rem; background:#444; border-radius: 50%;
+}
+.box-wrap article a {
+    display:block; position: absolute; 
+    left:9.8rem; right: 9.8rem; bottom: 6rem; 
+    color:#fff; line-height: 6rem; 
+    background:#00915a; border-radius: 0.4rem;
+}
+    /* left, right값을 줬더니 박스가 늘어났네...? 왜???? 근데 화면 줄이면 밉게 두줄로 늘어남ㅠㅠ */
+@media only screen and (max-width: 900px) {
+    .box-wrap {
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+    }
+    .box-wrap article {
+        position: relative; 
+        padding: 22rem 2rem 3rem; 
+        width: 100%; 
+        border: 1px solid #eee; border-radius: 3rem; 
+        background:#fff; box-shadow: 0 0.2rem 0.4rem 0 rgba(0 0 0 / 5%); 
+        overflow: hidden;
+    }
+    .box-wrap article .tit3-1 {
+        margin-bottom: 1rem; 
+        color: #00915a; font-size: 2.4rem; font-weight: 700; line-height: 3.2rem;
+    }
+    .box-wrap article dl {
+        padding: 3rem 1rem 0;
+    }
+    .box-wrap article a {
+        position: relative; 
+        margin-top: 3rem;
+        left:inherit; right: inherit; bottom: inherit; 
+        color:#fff; line-height: 6rem; 
+        background:#00915a; border-radius: 0.4rem;
+    }
+    .box-wrap > article + article {
+        margin-top: 3rem;
+    } 
+}
+
+    /*이때부터 살짝 혼돈의 카오스가...*/
+.main > article {
+    position: relative;
+    margin: 3rem auto 0; padding: 7rem 9.8rem 6rem;
+    width: 100%; max-width: 120rem;
+    border: 1px solid #eee; border-radius: 3rem;
+    background: #fff; box-shadow: 0 0.2rem 0.4rem 0 rgb(0 0 0 / 5%);
+}
+.main article .top {
+    position: relative;
+    margin-bottom: 8.6rem;
+    padding: 1rem 0 1rem 18rem;
+    text-align: left;
+}
+.main article .top::before {
+    content: ''; display: block; position: absolute;
+    top:0; left:0;
+    width: 15rem; height: 15rem;
+    background: url(/works/BNP/images/img_phonealert.png) no-repeat center; background-size: contain;
+}
+.main article .top h3 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem; font-weight: 700; line-height: 3.2rem;
+}
+.main article .top p:nth-of-type(1) {
+    margin-bottom: 1rem;
+    font-size: 3.2rem; font-weight: 700; line-height: 4.8rem; letter-spacing: -3px;
+}
+.main article .green {
+    position: relative;
+    z-index: 1;
+    color: #00915a; 
+}
+.main article .green:before {
+    content: ''; display: block; position: absolute;
+    z-index: -1;
+    width:100%; height:1.4rem;
+    bottom: 0; left: 0;
+    background: #adf8c8;
+}
+.main article .m {
+    display: none;
+}
+    /*겹치는 두 대상 모두에게 z-index값을 줘야하는군*/
+.main article ol {
+    display: flex;
+    margin: 0 3.2rem 6rem;
+    max-width: 74.2rem;
+    text-align: left;
+}
+.main article li {
+    padding-left: 7.6rem;
+    width: calc(50% - 1.5rem);
+}
+.main article li h4 {
+    margin-bottom: 1rem;    
+    position: relative;
+    font-size: 2.4rem; font-weight: 700; line-height: 3.4rem;
+}
+.main article li span {
+    content: ''; display: block; position: absolute;
+    left:-7.6rem;
+    width: 5.6rem; height: 5.6rem;
+    text-align: center; 
+    color:#fff; font-weight: normal; line-height: 5.2rem; 
+    background: #00915a;
+    border-radius: 50%;
+}
+.main article li p {
+    font-size: 1.8rem; line-height: 2.6rem;
+}
+.main article ol + p {
+    padding: 2rem;
+    color: #424242;
+    background: #cbecdb;
+}
+@media only screen and (max-width: 900px) {
+    .main > article {
+        padding: 2rem 2rem 3rem;
+    }
+    .main article .top {
+        margin-bottom: 3.6rem;
+        padding: 10.3rem 0 0 0;
+        text-align: center;
+    }
+    .main article .top::before {
+        margin-left: -4.6rem;
+        top:0; left:50%;
+        width: 9.3rem; height: 9.3rem;
+        background: url(/works/BNP/images/img_phonealert.png) no-repeat center; background-size: contain;
+    }
+    .main article .top h3 {
+        font-size: 1.8rem;
+    }
+    .main article .top p:nth-of-type(1) {
+        position: relative;
+        font-size: 2.4rem;line-height: 3.2rem;
+    }
+    .main article .m {
+        display: block; /* 이 부분 보고 따라함~~~ */
+    }
+    .main article ol {
+        flex-direction: column;
+        margin: 0 auto 3rem;
+        max-width: 74.2rem;
+        text-align: left;
+    }
+    .main article li {
+        padding-left: 5rem;
+    }
+    .main article li span {
+        left:-5rem;
+        width: 4rem; height: 4rem;
+        color:#fff; font-weight: normal; line-height: 4rem; 
+        background: #00915a;
+        border-radius: 50%;
+    }
+    .main article li + li {
+        margin-top: 2rem;
+    }
+}
+
+/* 이벤트 내용 */
+.event {
+    margin: 6rem auto 0;
+    width: 100%; max-width: 120rem;
+}
+.inner {
+    padding: 3rem 0 6rem;
+    background: linear-gradient(to bottom, #10aa80, #60dea7); border-radius: 1.5rem 1.5rem 0 0;
+}
+.inner p {
+    color: #fff;
+}
+.inner .tit3-1 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem; font-weight: 700; line-height: 3.2rem;
+}
+.inner > div {
+    position: relative;
+    margin: 0 auto;
+    width: 248px; height: 248px;
+}
+.inner button {
+    position: relative;
+    margin-top: 4.3rem;
+    width: 22rem; height: 22rem;
+    background: #fff; border-radius: 50%; box-shadow: 0 0 0 1rem #60dea7;
+    text-indent: -9999rem; overflow: hidden;
+}
+.inner button::before {
+    content: ''; display: block; position: absolute;
+    top: 1.4rem; left: 50%;
+    width: 2.2rem; height: 2.2rem;
+    margin-left: -1.4rem;
+    transform: rotate(-45deg);
+    border: 1px solid #df82fa; border-width: 0 0 2px 2px;
+    animation: up-down 1s linear infinite;
+}
+.inner button::after {
+    content: ''; display: block; position: absolute;
+    top: 1.4rem; left: 50%;
+    width: 3.4rem; height: 3.4rem;
+    margin-left: -2rem;
+    transform: rotate(-45deg);
+    border: 1px solid #cf44f8; border-width: 0 0 2px 2px;
+    animation: up-down 1s linear infinite;
+}
+.inner button.active::before,
+.inner button.active::after {
+    display: none;
+}
+@keyframes up-down {
+    0%, 100% {
+        top: 1.4rem;
+    }
+    50% {
+        top: 2.4rem;
+    }
+}
+#boxImg {
+    position: absolute;
+    top: 3.2rem;
+    width: 100%; height: 100%;
+    background: url(/works/BNP/images/img_gift.png) no-repeat center; background-size: cover; 
+    text-indent: -9999rem; overflow: hidden;
+}
+#boxImg.active {
+    background: url(/works//BNP/images/img_gift.gif) no-repeat center; background-size: cover;
+
+}
+.toggle-box {
+    display: none;
+    padding: 6rem 0;
+    border: 1px solid #c2c2c2; border-radius: 0 0 3rem 3rem; border-width: 0 1px 1px 1px;
+}
+.toggle-box h2 {
+    margin-bottom: 1rem;
+    color: #00915a;
+}
+.toggle-box dl {
+    margin: 3rem 0;
+}
+.toggle-box dt {
+    display: inline-block;
+    margin-bottom: 1rem; padding: 0 1.5rem;
+    font-weight: 700; line-height: 4.3rem;
+    border: 1px solid #00915a; border-radius: 5rem;
+}
+.toggle-box button {
+    margin-top: 2rem; padding: 0 6rem;
+    height: 6rem;
+    color: #fff; line-height: 6rem;
+    background: #00915a; border-radius: 4px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .event {
+        padding: 2rem;
+    }
+    .toggle-box {
+        padding: 3rem 2rem;
+    }
+    .toggle-box h2 {
+        margin-bottom: 1rem;
+        font-size: 2.4rem; line-height: 3.2rem;
+    }
+    .toggle-box button {
+        padding: 0 2rem;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+/* 꿀팁과 유의사항 */
+.info-3 {
+    width: 100%; max-width: 120rem;
+    margin: 0 auto; padding: 6rem 0;
+    font-size: 1.8rem; line-height: 2.6rem;
+    text-align: left;
+}
+.info-3 h2 {
+    margin-bottom: 1rem;
+    color: #00915a;
+     font-weight: 700;
+
+} 
+.info-3 .title {
+    text-indent: 4rem;
+    font-weight: bold; line-height: 3rem;
+    background: url(/works/BNP/images/icon_info_question.png) no-repeat left center; background-size: contain;
+}   
+.info-3 button {
+    position: absolute;
+    top: 0; left:0; right:0;
+    width: 100%; height: 3rem;
+    background: transparent;
+    overflow: hidden; text-indent: -9999rem;
+    cursor: pointer;
+}
+.info-3 button:after {
+    content: ''; display: block; position: absolute;
+    top:0; right:0;
+    width: 3rem; height: 3rem;
+    background: url(https://www.cardif.co.kr/img/common/icon_arrow_gray.png) no-repeat right center; background-size: contain;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.info-3 button.on:after {
+    transform: rotate(180deg);
+}
+.wordlist {
+    position: relative;
+    margin-top: 3rem;
+}
+.wordlist dl {
+    padding-left: 2rem;
+    color:#424242; font-size: 1.6rem;
+}
+.wordlist dt {
+    font-weight: 700;
+}
+.wordlist dt:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.note {
+    position: relative;
+    margin-top: 3rem;
+}
+.note .title {
+    text-indent: 4rem;
+    font-weight: bold; line-height: 3rem;
+    background: url(/works/BNP/images/icon_info.png) no-repeat left center; background-size: contain;
+}
+.note li {
+    position: relative;
+    padding-left: 3.4rem;
+    font-size: 1.6rem;
+}
+.note ul > li {
+    line-height: 2.6rem;
+}
+.note ul > li:before {
+    content: ''; display: block; position: absolute;
+    width: 4px; height: 4px;
+    top: 1.1rem; left: 2rem;
+    background: #797979; border-radius: 50%;
+}
+.note ol li {
+    text-indent: -3rem;
+}
+@media only screen and (max-width: 900px) {
+    .info-3 {
+        padding: 3rem 2rem;
+        line-height: 2rem;
+    }
+    .info-3 h2 {
+        font-size: 2.4rem; line-height: 3.2rem;
+    } 
+    .info-3 .title {
+        text-indent: 2.4rem;
+        font-size: 1.6rem; line-height: 1;
+    }   
+    .wordlist dl {
+        padding-left: 1rem;
+        color:#424242; font-size: 1.4rem;
+    }
+
+    .note {
+        margin-top: 3rem;
+    }
+    .note .title {
+        text-indent: 2.4rem;
+        font-size: 1.6rem; line-height: 1;
+    }
+    /* ul 타이틀인 유의사항과 li의 간격을 좁히고 싶은데 how? */
+    .note li {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+    .note ul > li {
+        line-height: 2rem;
+    }
+    .note li + li {
+        margin-top: 0.6rem;
+    }
+    .note ul > li:before {
+        width: 4px; height: 4px;
+        top: 1rem; left: 0rem;
+    }
+    .note ol li {
+        text-indent: -1rem;
+    }
+    
+}
