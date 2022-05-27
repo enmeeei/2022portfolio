@@ -401,7 +401,9 @@ header {
     font-size: 2.4rem;
     line-height: 3.6rem;
   }
-  
+  #experience .preview {
+    position: relative;
+  }
   #experience .preview picture img {
     position: absolute;
     top: 50%;
@@ -539,7 +541,7 @@ header {
     line-height: 3.2rem;
   }
   
-  #other .preview img {
+  #other .thumbnail img {
     border: 1px solid rgba(29, 29, 29, 0.3);
   }
   
