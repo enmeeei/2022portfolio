@@ -12,24 +12,44 @@ $(document).ready(function(){
     });
     }
 
-    $("#chkAll").click(function(){
-        if ($(this).is(":checked")) {
-            $("input[name=terms]").parent("label").addClass("on");
-            $(this).parent("label").addClass("on");
-         }
-        else {
-            $("input[name=terms]").parent("label").removeClass("on");
-            $(this).parent("label").removeClass("on");
-        }
-    });
+    // 약관 동의 form
 
-    $("input[name=terms]").click(function(){
-        $(this).parent("label").toggleClass("on");
-        if ($("input[name=terms]:checked").length == 7) {
-            $("#chkAll").parent("label").addClass("on");
-        }
-        else {
-            $("#chkAll").parent("label").removeClass("on");
-        }
-    })
+    const termsCB = $("input[name=terms");
+    const checkAll = $("#chkAll");
+    const submitBtn = $('button');
+
+        //약관 모두 동의 구동
+        $("#chkAll").click(function(){
+            if ($(this).is(":checked")) {
+                termsCB.parent("label").addClass("on");
+                termsCB.prop("checked", true);
+                $(this).parent("label").addClass("on");
+            }
+            else {
+                termsCB.parent("label").removeClass("on");
+                termsCB.prop("checked", false);
+                $(this).parent("label").removeClass("on");
+            }
+        });
+
+        termsCB.click(function(){
+            $(this).parent("label").toggleClass("on");
+            if ($("input[name=terms]:checked").length === 7) {
+                checkAll.parent("label").addClass("on");
+                checkAll.prop("checked", true);
+            }
+            else {
+                checkAll.parent("label").removeClass("on");
+                checkAll.prop("checked", false);
+            }
+        })
+
+        //모두 동의 및 필수 동의 체크시 button enabled
+        $(".termsAgree input").click(function() {
+            if ($(".terms-required:checked").length === 4) {
+                $("#termsSubmit").attr("disabled", false);
+            } else {
+                $("#termsSubmit").attr("disabled", true);
+            }
+        })
  });

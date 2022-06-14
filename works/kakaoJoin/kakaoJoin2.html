@@ -38,18 +38,18 @@
                     <ul>
                         <li>
                             <label>
-                            <input type="checkbox" id="age" name="terms">만 14세 이상입니다.
+                            <input type="checkbox" id="age" class="terms-required" name="terms">만 14세 이상입니다.
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" id="accountTerms" name="terms">[필수] 카카오계정 약관
+                                <input type="checkbox" id="accountTerms" class="terms-required" name="terms">[필수] 카카오계정 약관
                             </label>
                             <a href="./kakaoJoin2-1.html" target="_blank" title="새 창 열기">약관 내용</a>
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" id="cmbTerms" name="terms">[필수] 카카오 통합 서비스 약관
+                                <input type="checkbox" id="cmbTerms" class="terms-required" name="terms">[필수] 카카오 통합 서비스 약관
                             </label>
                             <p class="txt_gy t3">본 약관은 회사가 제공하는 카카오, Daum 서비스 등에 공통 적용되며, 본 약관에 동의함으로써 해당 서비스들을 별도 이용계약 체결 없이 이용할 수 있습니다.</p>
                             <a href="./kakaoJoin2-1.html" target="_blank" title="새 창 열기">약관 내용</a>
@@ -62,7 +62,7 @@
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" id="privTerms" name="terms">[필수] 개인정보 수집 및 이용 동의
+                                <input type="checkbox" id="privTerms" class="terms-required" name="terms">[필수] 개인정보 수집 및 이용 동의
                             </label>
                             <a href="./kakaoJoin2-2.html" target="_blank" title="새 창 열기">약관 내용</a>
                         </li>
@@ -79,7 +79,7 @@
                             <a href="./kakaoJoin2-2.html" target="_blank" title="새 창 열기">약관 내용</a>
                         </li>
                     </ul>
-                    <button type="submit" class="btn yellow" disabled>동의</button>
+                    <button type="submit" id="termsSubmit" class="btn yellow" disabled>동의</button>
                 </form>
             </main>
             <!-- 메인 영역 끝 -->
