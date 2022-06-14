@@ -77,7 +77,6 @@ $(document).ready(function(){
     })
 
    // 배너 영역에서 커서 위치에 따른 모양 변경
-    console.log(bannerWidth / 2)
     banner.mousemove(function(e){
         let x = e.clientX, y = e.clientY;
         if (x < bannerWidth / 2) {
