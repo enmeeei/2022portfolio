@@ -458,18 +458,18 @@ header {
     content: '';
     display: block;
     position: absolute;
-    height: 2.4rem;
+    height: 2.8rem;
     width: 3.5rem;
     top: 1.2rem;
     right: 1.4rem;
-    background: url(/image/arrow-up-right.svg) no-repeat center;
+    background: url(../image/arrow-up-right.svg) no-repeat center;
     background-size: contain;
     transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
   .btn-page_view.dark::after {
       top: 1.7rem; right: 1rem;
       height: 2.6rem;
-      background-image: url(/image/arrow-up-right-dark.svg);
+      background-image: url(../image/arrow-up-right-dark.svg);
       background-size: contain;
   }
   
