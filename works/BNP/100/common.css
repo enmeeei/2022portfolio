@@ -19,7 +19,6 @@
     url(../fonts/NotoSansKR-Bold.otf) format('opentype');
 }
 
-/* reset css는 자신이 처음부터 끝까지 다 쳐야하는건가? */
 * {box-sizing: border-box; margin:0; padding: 0; letter-spacing:-1px}
 html, body{width:100%; font-size: 10px; text-size-adjust: none; list-style: none; font-display:swap;
 }

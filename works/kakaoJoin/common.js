@@ -16,9 +16,8 @@ $(document).ready(function(){
 
     const termsCB = $("input[name=terms");
     const checkAll = $("#chkAll");
-    const submitBtn = $('button');
 
-        //약관 모두 동의 구동
+        //약관 모두 동의 
         $("#chkAll").click(function(){
             if ($(this).is(":checked")) {
                 termsCB.parent("label").addClass("on");
@@ -44,7 +43,7 @@ $(document).ready(function(){
             }
         })
 
-        //모두 동의 및 필수 동의 체크시 button enabled
+        //전체 동의 및 필수 동의 체크시 button enabled
         $(".termsAgree input").click(function() {
             if ($(".terms-required:checked").length === 4) {
                 $("#termsSubmit").attr("disabled", false);
@@ -52,4 +51,12 @@ $(document).ready(function(){
                 $("#termsSubmit").attr("disabled", true);
             }
         })
+    
+    // 패스워드 input 내용 삭제
+    $('#pw1Del').click(function() {
+        $('#password1').val('');
+    });
+    $('#pw2Del').click(function() {
+        $('#password2').val('');
+    });
  });

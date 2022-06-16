@@ -8,7 +8,7 @@ body {
 .top {
     position: relative;
     height: 62.8rem;
-    background: url(/works/BNP/images/img_day70@3x.png) no-repeat center bottom; background-size: cover;    
+    background: url(../images/img_day70@3x.png) no-repeat center bottom; background-size: cover;    
 }
 .main-visual {
     position: absolute;
@@ -66,7 +66,7 @@ body {
         height: 44.7rem;
         font-size: 1.6rem;
         line-height: 2.4rem;
-        background: url(/works/BNP/images/img_mo_day70.png) no-repeat center bottom; background-size: cover;
+        background: url(../images/img_mo_day70.png) no-repeat center bottom; background-size: cover;
     }
     .main-visual {
         padding-top: 3rem;
@@ -136,7 +136,7 @@ body {
     content: ''; display: block; position: absolute;
     top: 0; left: 0; right: 0;
     height: 19rem;
-    background: url(/works/BNP/images/img_box_02.png) no-repeat center; background-size: 18rem;
+    background: url(../images/img_box_02.png) no-repeat center; background-size: 18rem;
 }
 .title-green {
     color: #00915a;
@@ -194,7 +194,7 @@ body {
     margin-top: -1rem;
     top: 50%; right: 2rem;
     width: 2rem; height: 2rem;
-    background: url(/works/BNP/images/icon_detail.png) no-repeat center; background-size: contain;
+    background: url(../images/icon_detail.png) no-repeat center; background-size: contain;
 }
 .box-wrap > div dl {
     margin: 4rem 5rem 0;
@@ -234,7 +234,7 @@ body {
     margin-top: 2rem; 
     top: 0; left: 0; right: 0;
     width: 100%; height: 21.6rem;
-    background: url(/works/BNP/images/img_box_03.png) no-repeat center; background-size: contain;
+    background: url(../images/img_box_03.png) no-repeat center; background-size: contain;
 }
 .box-wrap ol {
     margin-bottom: 3rem;
@@ -258,7 +258,7 @@ body {
         content: ''; display: block; position: absolute;
         top: 0.4rem; right: 0rem;
         width: 2rem; height: 2rem;
-        background: url(/works/BNP/images/icon_detail.png) no-repeat; background-size: contain;
+        background: url(../images/icon_detail.png) no-repeat; background-size: contain;
 }
 @media only screen and (max-width: 900px) {
     .lv3 {
@@ -356,7 +356,7 @@ section + section {
     font-weight: bold; line-height: 3rem; text-indent: 4rem;
 }
 .info-title.t1 h3 {
-    background: url(/works/BNP/images/icon_info_question.png) no-repeat left center; background-size: contain;
+    background: url(../images/icon_info_question.png) no-repeat left center; background-size: contain;
 }
 .info-list {
     margin-top: 3rem;
@@ -373,7 +373,7 @@ section + section {
     color: #424242; font-size: 1.6rem; 
 }
 .info-title.t2 h3 {
-    background: url(/works/BNP/images/icon_info.png) no-repeat center left; background-size: contain;
+    background: url(../images/icon_info.png) no-repeat center left; background-size: contain;
 }
 .info-list.t2 li {
     position: relative;

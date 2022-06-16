@@ -12,8 +12,11 @@ input {
           헤더
 -------------------- */
 header {
+    position: relative;
+    margin: 0 auto;
     padding: 60px 0 54px;
     box-sizing: border-box;
+    max-width: 768px;
 }
 .main-logo {
 display: block;
@@ -31,7 +34,7 @@ header ul {
     padding: 8px 8px 7px 9px;
     top: 1.5rem; right: 1rem;
     min-width: 95px;
-    background: #f5f6f7;
+    background: #fff;
     border: 1px solid #dadada; box-sizing: border-box;
 }
 header ul::before {
@@ -45,6 +48,7 @@ header ul::before {
 header ul li {
     height: 20px;
     color:#333; font-size: 12px; line-height: 20px; text-align: left;
+    background: #fff;
     cursor: pointer;
 }
 header ul .langA{

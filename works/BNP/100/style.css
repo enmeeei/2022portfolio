@@ -5,7 +5,7 @@
      width:100vw; 
      color:#fff; 
      text-align: center; 
-     background:url(/works/BNP/images/img_day100@3x.png) no-repeat center bottom; 
+     background:url(../images/img_day100@3x.png) no-repeat center bottom; 
      background-size: cover;
     } 
 .main-banner .tit1-1 {
@@ -84,7 +84,7 @@
     margin-left: -12.4rem; 
     top:0; left:50%; 
     width:24.8rem; height:21.2rem; 
-    background: url(/works/BNP/images/img_box_07.png) center; background-size: contain;
+    background: url(../images/img_box_07.png) center; background-size: contain;
 }
 .lv5 p + p {
     margin-top: 1rem;
@@ -131,21 +131,21 @@
     position: absolute; 
     left:0rem; 
     height: 9rem; width: 9rem;
-    background: url(/works/BNP/images/sm_instagram.png) no-repeat center; background-size: contain;
+    background: url(../images/sm_instagram.png) no-repeat center; background-size: contain;
     }
 .info-5 li:nth-of-type(2):before {
     content: ''; 
     position: absolute; 
     left:0rem; 
     height: 9rem; width: 9rem; 
-    background: url(/works/BNP/images/sm_naver.png) no-repeat center; background-size: contain;
+    background: url(../images/sm_naver.png) no-repeat center; background-size: contain;
 }
 .info-5 li:nth-of-type(3):before {
     content: ''; 
     position: absolute; 
     left:0rem;
      height: 9rem; width: 9rem; 
-     background: url(/works/BNP/images/sm_facebook.png) no-repeat center; background-size: contain;
+     background: url(../images/sm_facebook.png) no-repeat center; background-size: contain;
     }
 .info-5 dt {
     font-weight: 700;
@@ -206,7 +206,7 @@
     position: absolute; 
     right:0; top:0rem; 
     height: 4rem; width: 2rem; 
-    background: url(/works/BNP/images/icon_arrow_right_on_black.png) no-repeat right top; background-size: contain;
+    background: url(../images/icon_arrow_right_on_black.png) no-repeat right top; background-size: contain;
 }
 
 .info-5 .tit2-1 {

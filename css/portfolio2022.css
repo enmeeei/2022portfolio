@@ -2,7 +2,7 @@
 
 html[data-theme="light"] {
     --color-main: #6836F0;
-    --color-background: #edecea;
+    --color-background: #ebeaed;
     --color-text: #1d1d1d;
     --color-opacity70: #6836f077;
     --color-opacity50: #6836f075;
@@ -11,7 +11,7 @@ html[data-theme="light"] {
   html[data-theme="dark"] {
     --color-main: #93E855;
     --color-background: #1d1d1d;
-    --color-text: #e2dfd8;
+    --color-text: #ebeaed;
     --color-opacity70: #92e85587;
     --color-opacity50: #92e85585;
   }
@@ -739,6 +739,9 @@ header {
       top: 0.5rem;
       width: 4.5rem;
       height: 2.6rem;
+    }
+    #resume a svg {
+      top: 0
     }
   }
   

@@ -22,8 +22,7 @@ $(document).ready(function(){
  
     $(function(){
         $(".error.ty3").hide();
-        $("input").keyup(function(){
-            
+        $("#pw2").keyup(function(){
             if("#pw1" == "#pw2"){
                 $(".error.ty3").hide();
             }
@@ -32,13 +31,4 @@ $(document).ready(function(){
             }           
         });
     });
-
-    $(function(){
-        $(".error.ty3").hide();
-        $("input").keyup(function(){
-             if("#pw1" == "#pw2"){
-                 $(".ero")
-             }
-        })
-    })
 })

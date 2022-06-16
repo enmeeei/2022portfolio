@@ -59,8 +59,12 @@ body {
 .main-visual ul li + li {
     margin-left: 2.6rem;
 }
-.main-visual ul li:first-of-type {
-    background: #fff; box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+.main-visual li[aria-current] {
+    font-weight: bold; 
+    background:#fff; box-shadow: 0 0.3rem 0.6rem rgba(0 0 0 / 16%);
+}
+.main-visual li[aria-current] a {
+    color:#00915a;
 }
 .main-visual ul li:last-of-type {
     width: 6rem; height: 6rem;

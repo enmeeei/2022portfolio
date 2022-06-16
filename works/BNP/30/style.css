@@ -6,7 +6,7 @@
     text-align: center; 
     height: 62.8rem; 
     color:#fff; 
-    background: url(/works/BNP/images/img_day30@3x.png) no-repeat center bottom; background-size: cover; 
+    background: url(../images/img_day30@3x.png) no-repeat center bottom; background-size: cover; 
 }
 .main-banner .tit1-1 {
     font-size: 4rem; font-weight: 700; line-height: 6rem;
@@ -52,7 +52,7 @@
     display: block; position: absolute; 
     left:calc(50% + 20rem); bottom:5rem; 
     width:12.6rem; height: 12.6rem; 
-    background: url(/works/BNP/images/btn-image01.png) center; background-size: contain;
+    background: url(../images/btn-image01.png) center; background-size: contain;
 }
 @media only screen and (max-width: 900px){
     .main-banner {
@@ -137,10 +137,10 @@ section {
     right:0; height: 19rem;
 }
 .box-wrap article:nth-of-type(1):after {
-    background: url(/works/BNP/images/img_box_01.png) no-repeat center; background-size: 18rem; 
+    background: url(../images/img_box_01.png) no-repeat center; background-size: 18rem; 
 }
 .box-wrap article:nth-of-type(2):after {
-    background: url(/works/BNP/images/img_box_02.png) no-repeat center; background-size: 18rem;
+    background: url(../images/img_box_02.png) no-repeat center; background-size: 18rem;
 }
 .box-wrap article .tit3-1 {
     margin-bottom: 3rem; 
@@ -225,7 +225,7 @@ section {
     content: ''; display: block; position: absolute;
     top:0; left:0;
     width: 15rem; height: 15rem;
-    background: url(/works/BNP/images/img_phonealert.png) no-repeat center; background-size: contain;
+    background: url(../images/img_phonealert.png) no-repeat center; background-size: contain;
 }
 .main article .top h3 {
     margin-bottom: 1rem;
@@ -296,7 +296,7 @@ section {
         margin-left: -4.6rem;
         top:0; left:50%;
         width: 9.3rem; height: 9.3rem;
-        background: url(/works/BNP/images/img_phonealert.png) no-repeat center; background-size: contain;
+        background: url(../images/img_phonealert.png) no-repeat center; background-size: contain;
     }
     .main article .top h3 {
         font-size: 1.8rem;
@@ -316,6 +316,7 @@ section {
     }
     .main article li {
         padding-left: 5rem;
+        width: 100%;
     }
     .main article li span {
         left:-5rem;
@@ -391,7 +392,7 @@ section {
     position: absolute;
     top: 3.2rem;
     width: 100%; height: 100%;
-    background: url(/works/BNP/images/img_gift.png) no-repeat center; background-size: cover; 
+    background: url(../images/img_gift.png) no-repeat center; background-size: cover; 
     text-indent: -9999rem; overflow: hidden;
 }
 #boxImg.active {
@@ -458,7 +459,7 @@ section {
 .info-3 .title {
     text-indent: 4rem;
     font-weight: bold; line-height: 3rem;
-    background: url(/works/BNP/images/icon_info_question.png) no-repeat left center; background-size: contain;
+    background: url(../images/icon_info_question.png) no-repeat left center; background-size: contain;
 }   
 .info-3 button {
     position: absolute;
@@ -501,7 +502,7 @@ section {
 .note .title {
     text-indent: 4rem;
     font-weight: bold; line-height: 3rem;
-    background: url(/works/BNP/images/icon_info.png) no-repeat left center; background-size: contain;
+    background: url(../images/icon_info.png) no-repeat left center; background-size: contain;
 }
 .note li {
     position: relative;
